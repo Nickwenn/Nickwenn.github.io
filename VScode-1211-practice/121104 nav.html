@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+<style>
+
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .navbar{
+        box-shadow: 0 0.5px 3px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .left_box{
+        float: left;
+    }
+    
+    .right_box{
+        float: right;
+    }
+   
+    .clearfix{
+        clear: both;
+    }
+    /* 清除浮動,讓ICON移置左邊box的層列,並還能顯示box shadow */
+    
+    i.fa-twitter{
+        font-size: 24px;
+        color: #1DA1F2;
+       
+    }
+    /* ICON超連結 */    
+
+
+
+</style>
+</head>
+
+<body>
+
+    <!-- 123數字是參考定位 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="left_box">1<i class="">
+                <a class="navbar-link" href="#">
+                <i class="fab fa-twitter">
+                    ::before
+                </i> 
+                </a>
+                <a class="navbar-link" href="#">關於</a>
+            </div>
+            <div class="right_box">2</div>
+                 <input class="search-box" type="text">
+                 <span class="navbar-link">已經擁有帳戶？ 登入</span>
+           
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+
+</body>
+</html>

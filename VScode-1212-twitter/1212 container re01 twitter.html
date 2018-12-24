@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+        crossorigin="anonymous">
+
+    <style>
+         *{
+           box-sizing: border-box;
+        }
+
+        body{
+            height: 2000px;
+            margin: 0;
+            padding-top: 50px;
+            background:url(folk-pattern.png);
+        }
+       
+        a{
+            text-decoration: none;
+        }
+            
+        .container {
+            width: 1170px;
+            margin: auto;
+        }     
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left:0;
+            width: 100%;
+            height:6%;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+            background-color:white;
+            z-index: 99;
+        }
+
+        .left_box {
+            float: left;
+        }
+
+        .right_box {
+            float: right;
+            
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    
+        i.fa-twitter{
+            font-size: 20px;
+            color: #1DA1F2;
+            margin-left: 5px;
+        }
+
+        .navbar-link{
+            line-height: 50px;
+            margin:0 15px;
+            font-size: 13px;
+            color:rgb(102, 117, 127);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .search-box{
+            border-radius: 15px;
+        }
+
+        .navbar2{
+            height: 50px;
+            background-color:white;
+            border : solid 1px
+            
+        }
+
+        /* img{
+            overflow: hidden;
+            weight: 50%;
+            width: 50%;
+            margin: 0 auto ;
+        } */
+
+        .image{
+            background-image: url("cat.jpeg");
+            width: 100%;
+            height: 400px;  
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: 0px -212px;           
+        }
+
+        .navbar20 .container{
+            position: relative;
+        }
+
+        .circle{
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            overflow: hidden;
+            border: 5px solid white;
+            border-radius: 50%;
+            position: absolute;
+            left:400px;
+            top:340px;
+            
+        }
+
+        .box img:hover{
+            transition: 0.1s;
+            
+        }
+
+        .box img:hover{
+            transform: scale(1.05);
+            transition: 0.3s;
+             
+        }
+
+       .left_box a{
+          margin-top: 4px;
+          margin-right: 20px; 
+          float: left;
+          color:rgb(102, 117, 127);
+       }
+
+       .navbar2 .left_box{
+           margin-left: 660px;
+            text-align: center;
+            
+       }
+
+       .left_box a span{
+        margin:auto;
+        color:rgb(102, 117, 127);
+       }
+
+
+       .navbar2 .right_box{
+        margin-right: 370px;
+        margin-top: 14px;
+        color:rgb(0, 132, 180);
+        border:  3px solid rgb(0, 132, 180);
+        border-radius: 20%;
+       }
+
+        .smallbox{
+        height: 200px;
+        width: 200px;
+        background-color: #1DA1F2;
+       }
+
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="left_box">
+                <a class="navbar-link" href="#">
+                    <i class="fab fa-twitter"></i>
+                    首頁
+                </a>
+                <a class="navbar-link" href="#">關於</a>
+            </div>
+
+            <div class="right_box">
+                <input class="search-box" type="text">
+                <span class="navbar-link">已經擁有帳戶? 登入</span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </nav>
+    <div class="image"></div>
+    <!-- <img src="cat.jpeg" alt>  -->
+
+    <div class="navbar2">
+        <div class="container"></div>
+        <div class="left_box">
+            <a href="">推文
+                <br>
+                <span>6140</span></a>
+            <a href="">正在跟隨
+                <br>
+                <span>76</span></a>
+            <a href="">跟隨者
+                <br>
+                <span>76</span></a>
+            <a href="">喜歡的內容
+                <br>
+                <span>100</span></a>
+            <div class="circle">
+                <img src="cat00.jpg" alt>
+            </div>
+        </div>
+        <div class="right_box">
+            <div id=smallbox>Follow</div>
+        </div>
+        <div class="clearfix"></div>
+
+
+
+    </div>
+</body>
+
+</html>

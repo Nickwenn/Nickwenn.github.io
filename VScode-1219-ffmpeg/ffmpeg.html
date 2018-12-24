@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .box .title {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+            color: aliceblue;
+        }
+
+        .box video {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="title">
+            <h1>dog</h1>
+        </div>
+        <video autoplay loop muted playsinline>
+            <source src="/media1219/1219.gif" type="vedio/gif">
+            <source src="/media1219/my-animation.mp4" type="vedio/mp4">
+                請安裝chrome
+        </video>   
+    </div>
+</body>
+
+</html>

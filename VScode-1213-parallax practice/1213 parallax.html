@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 250vh;
+            width: 100%;
+        }
+
+        #block01 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('/material/01.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .mask {
+            background-color: rgba(13, 13, 13, 0.2);
+            width: 100%;
+            height:  100%;
+        }
+
+        #block02 {
+            background-color: red;
+            width: 100px;
+            height: 50vh;
+        }
+
+        #block03 {
+            width: 100%;
+            height: 100vh;
+            background-image: url("/material/03.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #block03 span{
+            position: absolute;
+            top: 50%;
+            left: calc(50% - 200px);
+            display: block;
+            width: 400px;
+            height: 100px;
+
+        }
+
+        .span{
+            text-decoration-color: aliceblue
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="block01">
+        <div class="mask"></div>
+    </div>
+
+    <div id="block02">
+
+    </div>
+
+    <div id="block03">
+        <div class="mask"></div>
+        <span>一串文字</span>
+    </div>
+
+</body>
+
+</html>
