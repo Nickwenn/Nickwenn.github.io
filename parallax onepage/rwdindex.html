@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        .container {
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .left_box {
+            float: left;
+        }
+
+        .right_box {
+            float: right;
+        }
+
+        /* 最上方nav選單，點綴用 */
+        #sub_nav {
+            border-top: 35px solid #333;
+        }
+
+        /* 背景圖片選單 */
+        #bg_banner {
+            height: 70vh;
+            background-image: url('img/011.jpg');
+            /* background-image: url('img/04.jpg'); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0;
+        }
+
+        #bg_banner .container {
+            height: 70vh;
+            position: relative;
+        }
+
+        #bg_banner .title {
+            margin: 0;
+            position: absolute;
+            top: 70%;
+            right: 65px;
+            transform: translateY(-50% -50%);
+            color: white;
+            font-size: 60px;
+            line-height: 70px;
+            letter-spacing: 10px;
+            text-shadow: 3px 3px 5px #333;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 25px;
+        }
+
+        /* 主要選單 */
+        #main_nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #333;
+        }
+
+
+        #main_nav a.nav_link {
+            color: brown;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            float: left;
+            font-size: 20px;
+        }
+
+
+        /*---------------------------------- bkock01 ----------------------------------*/
+
+
+        #block01 {
+            width: 100%;
+            height: 450px;
+            background-color: white;
+        }
+
+        #block01 .left_box {
+            width: 50%;
+            background-color: #333;
+            width: 600px;
+            height: 450px;
+            background-image: url('img/04.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #block01 .right_box {
+            background-color: #aaa;
+            width: 50%;
+            height: 450px;
+            padding: 130px 20px;
+        }
+
+        #block01 .right_box h1 {
+            text-align: center;
+        }
+
+        #block01 .right_box p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+        /*---------------------------------- bkock02 ----------------------------------*/
+
+
+        #block02 {
+            width: 100%;
+            height: 450px;
+            background-color: #333;
+        }
+
+        #block02 .left_box {
+            width: 50%;
+            height: 100%;
+            background-color: #aaa;
+            padding: 130px 20px;
+        }
+
+        #block02 .left_box h1 {
+            text-align: center;
+        }
+
+        #block02 .left_box span {
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+
+        #block02 .right_box {
+            width: 50%;
+            height: 100%;
+            background-image: url('img/03.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-color: rgb(194, 29, 29); */
+        }
+
+
+        /*---------------------------------- bkock03 ----------------------------------*/
+
+        #block03 {
+            width: 100%;
+            height: 730px;
+            background-color: white;
+        }
+
+        #block03 .left_box {
+            width: 33.33%;
+            height: 100%;
+            background-color: #333;
+            float: left;
+            padding: 10px
+        }
+
+        #block03 .left_box .up_box {
+            width: 100%;
+            height: 70%;
+            background-color: aqua;
+            background-image: url('img/02.jpg');
+            /* background-position: center; */
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        #block03 .left_box .down_box {
+            width: 100%;
+            height: 30%;
+            font-size: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: antiquewhite;
+            text-align: center;
+            padding: 65px 60px;
+        }
+
+        #block03 .middle_box {
+            width: 33.33%;
+            height: 100%;
+            background-color: antiquewhite;
+            float: left;
+            padding: 10px
+        }
+
+        #block03 .middle_box .up_box {
+            width: 100%;
+            height: 70%;
+            background-color: aqua;
+            background-image: url('img/04.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #block03 .middle_box .down_box {
+            width: 100%;
+            height: 30%;
+            font-size: 20px;
+            color: cadetblue;
+            text-align: center;
+            padding: 65px 60px;
+        }
+
+        #block03 .right_box {
+            width: 33.33%;
+            height: 100%;
+            background-color: gray;
+            float: left;
+            padding: 10px
+        }
+
+        #block03 .right_box .up_box {
+            width: 100%;
+            height: 70%;
+            background-color: aqua;
+            background-image: url('img/09.jpg');
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #block03 .right_box .down_box {
+            width: 100%;
+            height: 30%;
+            font-size: 20px;
+            color: antiquewhite;
+            text-align: center;
+            padding: 65px 60px;
+        }
+
+        /*---------------------------------- bkock04 ----------------------------------*/
+
+        #block04 {
+            padding: 130px;
+            background-color: #333
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            color: antiquewhite;
+        }
+
+        .text {
+            padding: 0 10px;
+            font-size: 20px;
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        /*---------------------------------- bkock05 ----------------------------------*/
+
+        #block05 {
+            width: 100%;
+            height: 450px;
+            background-color: #aaa
+        }
+
+
+        #block05 .left_box {
+            float: left;
+            width: 50%;
+            height: 450px;
+            background-image: url('img/05.jpg');
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #block05 .left_box .title_section05_01 {
+            text-align: center;
+            font-size: 20px;
+            color: antiquewhite;
+            padding: 100px 0;
+        }
+
+        #block05 .left_box p {
+            text-align: center;
+            font-size: 20px;
+            color: antiquewhite;
+        }
+
+        #block05 .right_box {
+            float: left;
+            width: 50%;
+            height: 450px;
+            background-image: url('img/061.jpg');
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #block05 .right_box .title_section05_02 {
+            text-align: center;
+            font-size: 20px;
+            color: antiquewhite;
+            padding: 100px 0;
+        }
+
+        #block05 .right_box p {
+            text-align: center;
+            font-size: 20px;
+            color: antiquewhite;
+        }
+
+        /*---------------------------------- footer ----------------------------------*/
+
+        footer {
+            font-size: 12px;
+            background-color: #333;
+            color: #999;
+            padding: 8px 0;
+            text-align: center;
+        }
+
+        /* 平板 */
+        @media (max-width : 1220px) {
+
+            #block01 .left_box {
+                width: 100%;
+            }
+
+            #block01 .right_box {
+                width: 100%;
+            }
+
+            #block02 .left_box {
+                width: 100%;
+            }
+
+            #block02 .right_box {
+                width: 100%;
+            }
+
+            #block03 .left_box {
+                width: 100%;
+                padding:
+            }
+
+            #block03 .middle_box {
+                width: 100%;
+            }
+
+            #block03 .right_box {
+                width: 100%;
+            }
+        }
+
+        /* 手機 */
+        @media (max-width:480px) {
+            /* #bg_banner .title {
+            margin: 0;
+            position: absolute;
+            top: 70%;
+            right: 65px;
+            transform: translateY(-50% -50%);
+            color: white;
+            font-size: 60px;
+            line-height: 70px;
+            letter-spacing: 10px;
+            text-shadow: 3px 3px 5px #333;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 25px; */
+            #bg_banner .title {
+            margin: 0;
+            position: absolute;
+            top: 70%;
+            right: 65px;
+            transform: translateY(-90%);
+            color: white;
+            font-size: 35px;
+            line-height: 70px;
+            letter-spacing: 10px;
+            padding: 10px 25px;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--navbar及banner -->
+    <nav id="sub_nav"></nav>
+    <section id="bg_banner">
+        <div class="container">
+            <h1 class="title">Always remember us this way</h1>
+        </div>
+    </section>
+
+    <!-- 主要選單+position:sticky -->
+    <nav id="main_nav">
+        <div class="container">
+            <a class="nav_link" href="#section_1">SYNOPSIS</a>
+            <a class="nav_link" href="#section_2">GALLERY</a>
+            <a class="nav_link" href="#section_3">OUR STORY</a>
+            <a class="nav_link" href="#section_4">What we're search for</a>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+
+    <!-- block 01 -->
+
+    <section id="block01">
+        <div class="container">
+            <div class="left_box"></div>
+            <div class="right_box">
+                <h1>title</h1>
+                <p class="text01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt similique
+                    nostrum iure odio odit doloremque commodi rem totam labore?</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </section>
+
+    <!-- block 02 -->
+
+    <section id="block02">
+        <div class="container">
+            <div class="left_box">
+                <h1>title</h1>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsa, quisquam laudantium,
+                    tempora repellat quia perspiciatis aspernatur eaque labore corporis quod? Reprehenderit harum
+                    aliquam ex, adipisci alias quasi nam autem.</span>
+            </div>
+            <div class="right_box"></div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <!-- block 03 -->
+
+    <section id="block03">
+        <div class="container">
+            <div class="left_box">
+                <div class="up_box"></div>
+                <div class="down_box">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt?</span>
+                </div>
+            </div>
+            <div class="middle_box">
+                <div class="up_box"></div>
+                <div class="down_box">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt?</span>
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="up_box"></div>
+                <div class="down_box">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt?</span>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="footer"></div>
+
+
+
+    </section>
+
+
+    <!-- block 04 -->
+
+    <section id="block04">
+        <div class="container">
+            <h1>title</h1>
+            <br>
+            <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsa, quisquam
+                laudantium,
+                tempora repellat quia perspiciatis aspernatur eaque labore corporis quod? Reprehenderit harum
+                aliquam ex, adipisci alias quasi nam autem.</span>
+    </section>
+
+    <!-- block 05 -->
+
+    <section id="block05">
+        <div class="left_box">
+            <p class="title_section05_01">title</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vitae?</p>
+        </div>
+        <div class="right_box">
+            <p class="title_section05_02">title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, eius.</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            copyright by Wen Nick
+        </div>
+    </footer>
+</body>
+
+</html>
